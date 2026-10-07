@@ -1,6 +1,6 @@
 module mtuunibot
 
-go 1.23
+go 1.27
 
 require (
 	github.com/glebarez/sqlite v1.11.0
