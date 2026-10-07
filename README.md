@@ -1,0 +1,1 @@
+Base Bot for school_bot
