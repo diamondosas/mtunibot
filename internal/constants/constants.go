@@ -15,16 +15,30 @@ var Colleges = []string{
 // CollegeDepartments map - add or edit departments under their college here
 var CollegeDepartments = map[string][]string{
 	"CBAS": {
-		"Computer Science & Maths",
-		"Software Engineering",
+		"Computer Science & Mathematics",
+		"Biological Sciences",
+		"Biochemistry",
+		"Food Science & Technology",
+		"Physics",
+		"Chemical Sciences",
+		"Geosciences",
 	},
 	"CHMS": {
+		"Accounting & Finance",
+		"Business Administration",
+		"Economics",
+		"Fine & Applied Arts",
+		"Languages",
 		"Mass Communication",
-		"Accounting",
+		"Music",
+		"Philosophy & Religion Studies",
 	},
 	"CAHS": {
 		"Nursing Science",
+		"Public Health",
+		"Nutrition & Dietetics",
 		"Medical Laboratory Science",
+		"Biomedical Technology",
 	},
 }
 
