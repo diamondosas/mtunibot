@@ -8,6 +8,10 @@ import (
 func StartServer(port string) {
 	fs := http.FileServer(http.Dir("db"))
 	http.Handle("/db/", http.StripPrefix("/db/", fs))
+	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+	w.Write([]byte("Bot server is running!"))
+    })
+	
 	http.HandleFunc("/db", func(w http.ResponseWriter, r *http.Request) {
 		http.Redirect(w, r, "/db/", http.StatusMovedPermanently)
 	})
