@@ -80,7 +80,7 @@ Return ONLY valid JSON matching this schema:
 	userPrompt := fmt.Sprintf("File Name: %s\n\nDocument Excerpt:\n%s", fileName, textSnippet)
 
 	// Available working models on current Groq account
-	activeModels := []string{"openai/gpt-oss-20b", "qwen/qwen3.8-27b"}
+	activeModels := []string{"openai/gpt-oss-20b"}
 	var lastErr error
 
 	for _, modelName := range activeModels {
